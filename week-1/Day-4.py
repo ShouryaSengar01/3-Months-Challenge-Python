@@ -25,4 +25,4 @@ for _ in range(1, 101):
     else:
         print(_)  
 
-#P.S. - Didn't do anything on w3 school today coz the next topic was list which i'll be starting tmrw.
+#P.S. - Didn't do anything on w3 school today coz the next topic was list which i'll be starting Next Week
