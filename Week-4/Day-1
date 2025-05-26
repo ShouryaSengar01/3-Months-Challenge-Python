@@ -1,0 +1,235 @@
+# ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+# ░░      ⭐ Match-Case Statement ⭐      ░░  => Match case statement a.k.a awitch in other languages is an alternative to using many elif statements,
+# ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░     Execute some code if a value matches a 'case', Making it more clearer and readable syntax.
+
+#USUAL ELIF LOOP STATEMENTS
+
+# def week_days(day):
+#     if day == 1:
+#         return "It is Sunday"
+#     elif day == 2:
+#         return "It is Monday"
+#     elif day == 3:
+#         return "It is Tuesday"
+#     elif day == 4:
+#         return "It is Wednesday"
+#     elif day == 5:
+#         return "It is Thursday"
+#     elif day == 6:
+#         return "It is Friday"
+#     elif day == 7:
+#         return "It is Saturday"
+#     else:
+#         return "It isn't a Valid Day"
+    
+# print(week_days(56))
+
+#MATCH CASE VERSION
+
+# def week_days(day):
+#     match day:    
+#         case 1:
+#             return "It is Sunday"
+#         case 2:
+#             return "It is Monday"
+#         case 3:
+#             return "It is Tuesday"
+#         case 4:
+#             return "It is Wednesday"
+#         case 5:
+#             return "It is Thursday"
+#         case 6:
+#             return "It is Friday"
+#         case 7:
+#             return "It is Saturday"
+#         case _: #_ in case is like a wild card or else statement. if there is no matching cases then _ case will be executed.
+#             return "It isn't a Valid Day"
+    
+# print(week_days(2))
+
+#CHECKING FOR WEEKEND
+
+# def is_weekend(day):
+#     match day:    
+#         case "Sunday":
+#             return True
+#         case "Monday":
+#             return False
+#         case "Tuesday":
+#             return False
+#         case "Wednesday":
+#             return False
+#         case "Thursday":
+#             return False
+#         case "Friday":
+#             return False
+#         case "Saturday":
+#             return True
+#         case _: 
+#             return "It isn't a Valid Day"
+    
+# print(is_weekend("Sunday"))
+
+#PYTHONIC WAY
+
+def is_weekend(day):
+    match day:    
+        case "Saturday"|"Sunday":
+            return True
+        case "Monday"|"Tuesday"|"Wednesday"|"Thursday"|"Friday":
+            return False
+        case _: 
+            return "It isn't a Valid Day"
+    
+print(is_weekend("Friday"))# ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+# ░░      ⭐ Match-Case Statement ⭐      ░░  => Match case statement a.k.a awitch in other languages is an alternative to using many elif statements,
+# ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░     Execute some code if a value matches a 'case', Making it more clearer and readable syntax.
+
+#USUAL ELIF LOOP STATEMENTS
+
+# def week_days(day):
+#     if day == 1:
+#         return "It is Sunday"
+#     elif day == 2:
+#         return "It is Monday"
+#     elif day == 3:
+#         return "It is Tuesday"
+#     elif day == 4:
+#         return "It is Wednesday"
+#     elif day == 5:
+#         return "It is Thursday"
+#     elif day == 6:
+#         return "It is Friday"
+#     elif day == 7:
+#         return "It is Saturday"
+#     else:
+#         return "It isn't a Valid Day"
+    
+# print(week_days(56))
+
+#MATCH CASE VERSION
+
+# def week_days(day):
+#     match day:    
+#         case 1:
+#             return "It is Sunday"
+#         case 2:
+#             return "It is Monday"
+#         case 3:
+#             return "It is Tuesday"
+#         case 4:
+#             return "It is Wednesday"
+#         case 5:
+#             return "It is Thursday"
+#         case 6:
+#             return "It is Friday"
+#         case 7:
+#             return "It is Saturday"
+#         case _: #_ in case is like a wild card or else statement. if there is no matching cases then _ case will be executed.
+#             return "It isn't a Valid Day"
+    
+# print(week_days(2))
+
+#CHECKING FOR WEEKEND
+
+# def is_weekend(day):
+#     match day:    
+#         case "Sunday":
+#             return True
+#         case "Monday":
+#             return False
+#         case "Tuesday":
+#             return False
+#         case "Wednesday":
+#             return False
+#         case "Thursday":
+#             return False
+#         case "Friday":
+#             return False
+#         case "Saturday":
+#             return True
+#         case _: 
+#             return "It isn't a Valid Day"
+    
+# print(is_weekend("Sunday"))
+
+#PYTHONIC WAY
+
+def is_weekend(day):
+    match day:    
+        case "Saturday"|"Sunday":
+            return True
+        case "Monday"|"Tuesday"|"Wednesday"|"Thursday"|"Friday":
+            return False
+        case _: 
+            return "It isn't a Valid Day"
+    
+print(is_weekend("Friday"))
+
+
+#---------------------------------------------------------------------------------------------------------------------------
+
+# ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+# ░░       ⭐ LIST COMPREHENSION ⭐      ░░  => A consice and easier way to create list in python and loop though them. It's compact and easier to read than 
+# ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░     usual loops.=> [EXPRESSION for VALUE in ITERABLE if CONDITION]
+
+doubles = [x ** 2 for x in range(1,11)] #easier way is like type the "for x in range(1,11)" do this "x**2". like fill the for value in iterable first then go
+                                        #for expression and then condition. e.x. for money in pocket - money * 2 for money in pocket- money * 2 for money in #pocket if money<100
+# print(doubles)
+
+# pocket = [500]
+# pocket = [money * 2 for money in pocket if money < 100]
+# print(pocket)
+
+
+fruits = ["apples", "banana", "pineapple", "orange", "blueberry"]
+fruits = [fruit.upper() for fruit in fruits]
+fruits_chat = [fruit[0] for fruit in fruits]
+# print(fruits_chat)
+
+nums = [1, -2, -3, 4, -5 ,6 ,7, 8, -9]
+positive_num = [num for num in nums if num >= 0]
+negative_num = [num for num in nums if num < 0]
+even_num = [num for num in nums if num%2 == 0]
+odd_num = [num for num in nums if num%2 != 0]
+# print(odd_num)
+
+grades = [82, 60, 12, 42, 26, 94, 22]
+grace = [grade + 4 for grade in grades if grade < 30]
+print(grace)
+
+
+#---------------------------------------------------------------------------------------------------------------------------
+
+# ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+# ░░        ⭐ MODULES ⭐       ░░  => It's a file containing some form of program to help you with ur program, you can use'import' to use it in your prgrm 
+# ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░     It's useful to break a large program resusable separate files.
+
+
+# import math
+# import math as m
+# from math import pi [won't recommend using it that much]
+# print(m.pi)
+
+import My_Module
+
+# result = My_Module.pi
+# result = My_Module.square(2)
+# result = My_Module.cube(3)
+# result = My_Module.circumference(4)
+result = My_Module.area(5)
+
+print(result)
+
+#MODULEEEEEEEEE
+
+pi = 3.14159
+
+def square(x):
+    return x ** 2
+def cube (x):
+    return x ** 3
+def circumference(radius):
+    return 2 * pi * radius
+def area(radius):
+    return pi * radius ** 2
