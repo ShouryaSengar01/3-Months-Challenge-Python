@@ -33,6 +33,7 @@ def withdraw():
         print("***********************")
         return 0
     else:
+        print("Your amount has been withdrawn successfully")
         return amount
 
 def main():
@@ -54,11 +55,11 @@ def main():
 
         if choice == "1":
             show_balance()
-        if choice == "2":
+        elif choice == "2":
             balance += deposit()
-        if choice == "3":
+        elif choice == "3":
             balance -= withdraw()
-        if choice == "4":
+        elif choice == "4":
             is_running = False
         else:
             print("***********************")
@@ -72,6 +73,7 @@ if __name__ == '__main__':
     main()
 
 
-
 # P.S. I know it's been a very incosistent week, uploading files a day or 2 later on github but I just wanna make this clear that I was working on these but wasn't uploading(i really don't know why and yes it does sound like
 # an excuse). But From now on i'll be uploading my files daily and i left some topics this week which i will cover in the upcoming week.
+
+#P.S. 2- Made a few changes in the code bcz of some statements
