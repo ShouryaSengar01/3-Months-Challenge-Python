@@ -1,0 +1,63 @@
+# ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+# ░░      ⭐ VARIABLE SCOPE ⭐      ░░  => Where a varable is visible and accesible
+# ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░     
+
+# ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+# ░░      ⭐ SCOPE RESOLUTION ⭐      ░░  => (LEGB)  Local -> Enclosed -> Global -> Built-in
+# ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░     
+
+#LOCAL
+# def func1():
+#     x = 1
+#     print(x)
+#                         #x in f1 and f2 are local vaiables
+# def func2():
+#     x = 2
+#     print(x)
+
+# func1()
+# func2()
+
+#ENCLOSED
+
+# def func1():
+#     x = 1
+#     def func2():
+#         x = 2       # it'll use x=2 bcz it's local
+#         print(x)
+#     func2()
+# func1()
+
+# def func1():
+#     x = 1
+#     def func2():     # but now it'll use x=1 bcz func2 is enclosed in func1 
+#         print(x)
+#     func2()
+# func1()
+
+# GLOBAL
+
+# def func1():
+#     print(x)
+
+# def func2():
+#     print(x)
+# x = 3         #Both f1 and f2 will use x=3 because it's global P.s. If there was a local they would have used that.
+# func1()
+# func2()
+
+#BUILT-IN
+
+from math import e
+
+def func1():
+    print(e)
+
+func1()
+
+
+#-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+for key, value in my_dict.items():
+    print(f"{key}:{value}")
