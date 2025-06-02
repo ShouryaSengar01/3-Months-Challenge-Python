@@ -81,7 +81,9 @@ def is_weekend(day):
         case _: 
             return "It isn't a Valid Day"
     
-print(is_weekend("Friday"))# ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+print(is_weekend("Friday"))
+
+# ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
 # ░░      ⭐ Match-Case Statement ⭐      ░░  => Match case statement a.k.a awitch in other languages is an alternative to using many elif statements,
 # ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░     Execute some code if a value matches a 'case', Making it more clearer and readable syntax.
 
