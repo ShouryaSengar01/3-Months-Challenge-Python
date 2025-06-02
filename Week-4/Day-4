@@ -1,0 +1,41 @@
+#-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+# ░░        ⭐ MODULES ⭐       ░░  => It's a file containing some form of program to help you with ur program, you can use'import' to use it in your prgrm 
+# ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░     It's useful to break a large program resusable separate files.
+
+
+# import math
+# import math as m
+# from math import pi [won't recommend using it that much]
+# print(m.pi)
+
+import My_Module
+
+# result = My_Module.pi
+# result = My_Module.square(2)
+# result = My_Module.cube(3)
+# result = My_Module.circumference(4)
+result = My_Module.area(5)
+
+print(result)
+
+#-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+# ░░       ⭐ ITERABLES ⭐      ░░  => An Object/Colellction that can return its elements one at a time, 
+# ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░     allowing it to be iterated over in a loop.
+
+numbers = [1, 2, 3 ,4 ,5 ] #list iteration
+for num in reversed(numbers): 
+    print(num)
+
+fruits = {"apple", "pineapple", "litchi", "strawberry"}  #set iteration
+for _ in fruits: 
+    print(_)
+
+name = "Ben Tennyson" #string iteration
+for x in name:
+    print(x, end= "#")
+
+my_dict = {"A":1, "B":2, "C":3, "D":4} #dictionary iteration
