@@ -1,0 +1,39 @@
+# ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+# ░░    ⭐ __name__ and __main__ ⭐     ░░  => (this script can be imported or run standalone)
+# ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░    Functions and classes in this module can be reused without the main block of code executing. Basically you
+#                                              can use it to run some part of code from the whole function.
+# Ex. you can import library for functionality. When running library directly, display a help page.
+
+
+#Someting like Iwant to mport this particular part of the code from the file but not the whole using == or vice-versa using !=
+
+# def main():
+    #Your program goes here
+
+
+# if __name__ == '__main__':
+#     main()
+
+#-----------------SCRIPT1-------------------------
+
+def favourite_food(food):
+    print(f"Your Favourite Food is {food}")
+
+def main():
+    print("This is Script 1")
+    favourite_food("Subway")
+    print("Adios")
+
+if __name__ == '__main__':
+    main()
+#-----------------SCRIPT2-------------------------
+from script1 import *
+
+def fav_drink(drink):
+    print(f"Your Fav Drink is {drink}")
+
+print("This is Script II")
+favourite_food("Pizza")
+fav_drink("Strawberry Shake")
+print("Ciao")
+
