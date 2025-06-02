@@ -1,0 +1,31 @@
+# ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+# ░░       ⭐ LIST COMPREHENSION ⭐      ░░  => A consice and easier way to create list in python and loop though them. It's compact and easier to read than 
+# ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░     usual loops.=> [EXPRESSION for VALUE in ITERABLE if CONDITION]
+
+doubles = [x ** 2 for x in range(1,11)] #easier way is like type the "for x in range(1,11)" do this "x**2". like fill the for value in iterable first then go
+                                        #for expression and then condition. e.x. for money in pocket - money * 2 for money in pocket- money * 2 for money in #pocket if money<100
+# print(doubles)
+
+# pocket = [500]
+# pocket = [money * 2 for money in pocket if money < 100]
+# print(pocket)
+
+
+fruits = ["apples", "banana", "pineapple", "orange", "blueberry"]
+fruits = [fruit.upper() for fruit in fruits]
+fruits_chat = [fruit[0] for fruit in fruits]
+# print(fruits_chat)
+
+nums = [1, -2, -3, 4, -5 ,6 ,7, 8, -9]
+positive_num = [num for num in nums if num >= 0]
+negative_num = [num for num in nums if num < 0]
+even_num = [num for num in nums if num%2 == 0]
+odd_num = [num for num in nums if num%2 != 0]
+# print(odd_num)
+
+grades = [82, 60, 12, 42, 26, 94, 22]
+grace = [grade + 4 for grade in grades if grade < 30]
+print(grace)
+
+
+
